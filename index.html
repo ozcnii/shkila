@@ -12,6 +12,13 @@
       <hr />
       <img src="" alt="" />
     </div>
-    <script type="module" src="/main.js"></script>
+    <script>
+      const img = document.querySelector("img");
+
+      document.querySelector("input").oninput = (event) => {
+        const page = event.target.value;
+        img.src = `https://gdzbot.com/content/klass-11/deutch/Radchenko-Wunderkinder-Plus/exercise/Stranicy-uchebnika/${page}.jpg`;
+      };
+    </script>
   </body>
 </html>
