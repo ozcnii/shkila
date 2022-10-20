@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDZ Deutsch 10</title>
+  </head>
+  <body>
+    <div id="app">
+      <a href="/10.html">10</a>
+      <a href="/index.html">11</a>
+      <input type="text" />
+      <hr />
+      <img src="" alt="" />
+    </div>
+    <script>
+      const img = document.querySelector("img");
+
+      document.querySelector("input").oninput = (event) => {
+        const page = event.target.value;
+        img.src = `https://gdzbot.com/content/klass-10/deutch/Radchenko-Wunderkinder-Plus/exercise/Stranicy-uchebnika/${page}.jpg`;
+      };
+    </script>
+  </body>
+</html>
